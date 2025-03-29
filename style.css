@@ -147,3 +147,34 @@ body {
     background-color: wheat;
     color: black;
 }
+
+/* Responsive Design for Mobile */
+@media (max-width: 600px) {
+    .container {
+        width: 95%;
+        min-width: unset;
+        padding: 15px;
+    }
+
+    #newtask {
+        flex-direction: column;
+    }
+
+    #newtask input,
+    #newtask button {
+        width: 100%;
+    }
+
+    #filters {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #filters button {
+        width: 90%;
+    }
+
+    .tasks {
+        max-height: 250px;
+    }
+}
