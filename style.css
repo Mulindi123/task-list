@@ -6,8 +6,13 @@
   padding: 0;
 }
 body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 100vh;
     background: #0F62F3;
+    margin: 0;
+    font-family: sans-serif;
 }
 #head-text {
     margin-top: 50px;
@@ -48,6 +53,8 @@ body {
     border-color: #0D75EC;
 }
 #newtask button {
+    width: auto;
+    padding: 10px 15px;
     position: relative;
     float: right;
     width: 20%;
@@ -135,13 +142,15 @@ body {
 }
 
 #filters button {
-    margin: 0 5px;
+    flex: 1;
+    margin: 5px 5px;
     padding: 8px 12px;
     background-color: #0F62FE;
     color: white;
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    max-width: 100px;
 }
 #filters button.active-filter {
     background-color: wheat;
@@ -162,6 +171,7 @@ body {
 
     #newtask input,
     #newtask button {
+        margin-top: 5px;
         width: 100%;
     }
 
