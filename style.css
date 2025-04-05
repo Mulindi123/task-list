@@ -201,3 +201,10 @@ body {
 .blink {
     animation: blink 1s infinite;
 } */
+ ::placeholder {
+    color: #6b6767;
+    opacity: 1; /* Firefox lowers opacity by default */
+    font-weight: 400;
+    font-size: 15px;
+    font-family: sans-serif;
+ }
