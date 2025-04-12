@@ -130,4 +130,23 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         });
     }
+
+    const themeToggleButton = document.getElementById("toggle-theme");
+
+    // Apply theme on load
+    const currentTheme = localStorage.getItem("theme");
+    if (currentTheme === "dark") {
+        document.body.classList.add("dark-mode");
+        themeToggleButton.textContent = "Switch to Light Mode";
+    }
+
+    // Toggle theme and button label
+    themeToggleButton.addEventListener("click", () => {
+        const isDark = document.body.classList.toggle("dark-mode");
+        localStorage.setItem("theme", isDark ? "dark" : "light");
+        themeToggleButton.textContent = isDark
+            ? "Switch to Light Mode"
+            : "Switch to Dark Mode";
+    });
+
 });
